@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="sample suite" guice-stage="DEVELOPMENT">
+  <test  name="Default test" thread-count="5"  verbose="2">
+    <classes>
+      
+      <class name="TestngSessions.ExceptedExceptConcept"/>
+      <class name="TestngSessions.InvocationCount"/>
+      <class name="TestngSessions.PriorityTest"/>
+    </classes>
+  </test> 
+</suite> 

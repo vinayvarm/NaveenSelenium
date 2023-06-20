@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<!-- 
+thread count comes from memory management -->
+
+<suite name="sample suite" guice-stage="DEVELOPMENT" thread-count="2"  parallel="tests">
+   
+  <test name="login test">
+  <parameter name="url" value="https://demo.opencart.com/index.php?route=account/login" />
+    <parameter name="un" value="naveenanimation20@gmail.com" />
+     <parameter name="pwd" value="Selenium12345" />
+  <classes>
+  <class name="com.tests.LoginTest" />
+  </classes></test>
+  <test name="register test">
+  <parameter name="appurl" value="https://demo.opencart.com/index.php?route=account/login" />
+  <classes>
+   <class name="com.tests.Register" />
+  </classes>
+   </test>
+</suite> 
+
